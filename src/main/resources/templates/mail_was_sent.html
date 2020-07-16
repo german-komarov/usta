@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mail was sent</title>
+    <link th:href="@{/css/notification.css}" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <h1>Notification</h1>
+    <p>Confirmation mail was sent to <span th:text="${email}"></span>.
+    Please check your mail box and activate your account.</p>
+</div>
+
+<div>
+    <p>If you didn't get mail, please follow this : <a href="/registration/sendMailAgain">Link</a></p>
+</div>
+
+</body>
+</html>
